@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-color: transparent;
   height: 100svh;
+  width: 100vw;
 }
 
 .hero-overlay {
@@ -18,9 +19,11 @@
   color: white;
   text-align: center;
 }
+
+/* SOLO móvil */
 @media screen and (max-width: 768px) {
   .hero {
-    background-size: contain;
-    background-position: center;
+    background-size: cover;          /* mantenemos impacto */
+    background-position: 65% center; /* desplaza hacia la derecha */
   }
 }
