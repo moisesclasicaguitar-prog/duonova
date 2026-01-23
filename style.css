@@ -42,7 +42,7 @@
     grid-template-columns: 1fr;
   }
 
-  .gallery-2 img {
+  .gallery-2 .foto {
     height: 220px;
   }
 }
