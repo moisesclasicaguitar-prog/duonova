@@ -19,15 +19,23 @@
 }
 .gallery-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  align-items: stretch;
+}
+
+.gallery-2 .foto {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .gallery-2 img {
   width: 100%;
-  height: 280px;      /* horizontal clara */
-  object-fit: cover; /* elegante, sin deformar */
-  border-radius: 8px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 @media (max-width: 768px) {
   .gallery-2 {
