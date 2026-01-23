@@ -1,9 +1,10 @@
 
 .hero {
-  position: relative;
-  height: 100svh;
-  width: 100vw;
-  overflow: hidden; /* esto recorta lo que sobra (abajo) */
+  background-image: url("fotoduo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .hero-overlay {
