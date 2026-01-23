@@ -2,9 +2,9 @@
 .hero {
   background-image: url("fotoduo.png");
   background-size: cover;
-  background-position: center;
+  background-position: center 35%;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 85vh;      /* 👈 MÁS BAJA */
 }
 
 .hero-overlay {
