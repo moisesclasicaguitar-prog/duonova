@@ -23,6 +23,6 @@
 /* MÓVIL – FORZADO */
 @media screen and (max-width: 768px) {
   .hero {
-    background-position: 25% center;
+    background-position: 80% center;
   }
 }
