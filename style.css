@@ -56,19 +56,13 @@
     height: 280px;
   }
 }
+
 @media (max-width: 768px) {
   .hero {
-    background-image: url("portadamovil.jpeg");
-    height: 70vh;
-    background-position: center 15%;
+    background-image: url("./portadamovil.jpeg");
+    height: 68vh;
+    background-position: center -12%;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-}
-@media (max-width: 768px) {
-  .hero {
-    background-image: url("./portadamovil.jpeg") !important;
-    height: 70vh !important;
-    background-position: center 10% !important;
   }
 }
