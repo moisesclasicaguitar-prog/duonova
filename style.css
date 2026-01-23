@@ -69,6 +69,6 @@
   .hero {
     background-image: url("./portadamovil.jpeg") !important;
     height: 70vh !important;
-    background-position: center 15% !important;
+    background-position: center 10% !important;
   }
 }
