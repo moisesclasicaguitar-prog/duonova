@@ -59,10 +59,12 @@
 
 @media (max-width: 768px) {
   .hero {
-    background-image: url("./portadamovil.jpeg");
-    height: 68vh;
-    background-position: center -12%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("./portadamovil.jpeg") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+    /* Esto fuerza el “recorte por abajo” */
+    background-position: center top !important;
+    height: 50vh !important;   /* <- aquí está el recorte real */
   }
 }
