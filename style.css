@@ -56,3 +56,9 @@
     height: 280px;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    height: 75vh;
+    background-position: center 25%;
+  }
+}
