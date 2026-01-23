@@ -65,3 +65,10 @@
     background-repeat: no-repeat;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    background-image: url("./portadamovil.jpeg") !important;
+    height: 70vh !important;
+    background-position: center 15% !important;
+  }
+}
