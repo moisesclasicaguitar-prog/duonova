@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("portada.jpg.png");
+  background-image: url("portada jpg.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -13,4 +13,5 @@
   justify-content: center;
   align-items: center;
   color: white;
+  text-align: center;
 }
