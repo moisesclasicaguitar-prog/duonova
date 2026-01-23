@@ -17,16 +17,3 @@
   color: white;
   text-align: center;
 }
-
-/* SOLO MÓVIL */
-@media screen and (max-width: 768px) {
-  .hero {
-    background-color: white;      /* bordes blancos */
-    background-size: contain;     /* la foto se ve entera */
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 85vh;                 /* foto más baja */
-    padding: 20px 15px 30px 15px; /* arriba, derecha, abajo, izquierda */
-    box-sizing: border-box;
-  }
-}
