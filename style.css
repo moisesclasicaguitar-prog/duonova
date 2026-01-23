@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center 35%;
   background-repeat: no-repeat;
-  height: 70vh;   /* 👈 MÁS MENÚ VISIBLE */
+  height: 70vh;
 }
 
 .hero-overlay {
@@ -58,7 +58,10 @@
 }
 @media (max-width: 768px) {
   .hero {
-    height: 60vh;
-    background-position: center 25%;
+    background-image: url("portadamovil.jpeg");
+    height: 70vh;
+    background-position: center 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
