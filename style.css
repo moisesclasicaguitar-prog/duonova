@@ -20,6 +20,7 @@
 }
 @media screen and (max-width: 768px) {
   .hero {
-   background-position: 35% center;
+    background-size: contain;
+    background-position: center;
   }
 }
