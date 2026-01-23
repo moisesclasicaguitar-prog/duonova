@@ -1,15 +1,14 @@
 
 .hero {
-  background-image: url("fotoduo.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
+  position: relative;
   height: 100svh;
   width: 100vw;
+  overflow: hidden; /* esto recorta lo que sobra (abajo) */
 }
 
 .hero-overlay {
+  position: absolute;
+  inset: 0;
   background: rgba(0, 0, 0, 0.35);
   height: 100%;
   display: flex;
@@ -25,4 +24,11 @@
   .hero {
     background-position: 80% center;
   }
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* llena la portada */
+  object-position: center top; /* las cabezas quedan arriba */
+  display: block;
 }
