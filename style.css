@@ -24,6 +24,6 @@
 @media screen and (max-width: 768px) {
   .hero {
     background-size: cover;          /* mantenemos impacto */
-    background-position: 65% center; /* desplaza hacia la derecha */
+    background-position: 75% center; /* desplaza hacia la derecha */
   }
 }
