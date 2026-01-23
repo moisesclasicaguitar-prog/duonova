@@ -1,7 +1,9 @@
 .hero {
-  background-image: url("portada.png");
+  background-image: url("/duonova/portada.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
   height: 100vh;
 }
 
