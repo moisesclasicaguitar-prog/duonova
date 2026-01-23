@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center 35%;
   background-repeat: no-repeat;
-  height: 85vh;      /* 👈 MÁS BAJA */
+  height: 70vh;   /* 👈 MÁS MENÚ VISIBLE */
 }
 
 .hero-overlay {
@@ -58,7 +58,7 @@
 }
 @media (max-width: 768px) {
   .hero {
-    height: 75vh;
+    height: 60vh;
     background-position: center 25%;
   }
 }
