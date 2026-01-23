@@ -2,8 +2,8 @@
 .hero {
   background-image: url("fotoduo.png");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: transparent;
   height: 100svh;
   width: 100vw;
@@ -20,10 +20,10 @@
   text-align: center;
 }
 
-/* SOLO móvil */
+/* MÓVIL – FORZADO */
 @media screen and (max-width: 768px) {
   .hero {
-    background-size: cover;          /* mantenemos impacto */
-    background-position: 75% center; /* desplaza hacia la derecha */
+    background-position-x: 75% !important;
+    background-position-y: center !important;
   }
 }
