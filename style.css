@@ -17,3 +17,24 @@
   color: white;
   text-align: center;
 }
+.gallery-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.gallery-2 img {
+  width: 100%;
+  height: 280px;      /* horizontal clara */
+  object-fit: cover; /* elegante, sin deformar */
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .gallery-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-2 img {
+    height: 220px;
+  }
+}
