@@ -56,20 +56,24 @@
     height: 280px;
   }
 }
-
 @media (max-width: 768px) {
   .hero {
     background-image: url("./portadamovil.jpeg") !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-
-    /* Esto fuerza el “recorte por abajo” */
     background-position: center top !important;
-    height: 50vh !important;   /* <- aquí está el recorte real */
+    height: 50vh !important;
   }
-}
-@media (max-width: 768px) {
+
+  /* Oculta texto y quita el oscurecido del overlay */
   .hero-overlay {
-    display: none;
+    background: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Por si acaso hay estilos directos en el h1/p */
+  .hero-overlay h1,
+  .hero-overlay p {
+    display: none !important;
   }
 }
