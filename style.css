@@ -68,3 +68,8 @@
     height: 50vh !important;   /* <- aquí está el recorte real */
   }
 }
+@media (max-width: 768px) {
+  .hero-overlay {
+    display: none;
+  }
+}
