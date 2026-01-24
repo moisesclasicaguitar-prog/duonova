@@ -11,11 +11,11 @@
   background: rgba(0, 0, 0, 0.35);
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;  /* abajo */
+  align-items: flex-end;      /* derecha */
+  padding: 50px;
   color: white;
-  text-align: center;
+  text-align: right;
 }
 .gallery-2 {
   display: grid;
