@@ -116,3 +116,40 @@ h1, h2, h3 {
     font-size: 18px;
   }
 }
+/* --- Acabado general --- */
+section {
+  padding: 70px 20px;
+}
+
+section h2 {
+  font-size: 30px;
+  margin-bottom: 26px;
+}
+
+/* Tarjetas más pro */
+.card {
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 14px;
+  padding: 26px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* Textos */
+p {
+  font-size: 17px;
+}
+
+/* Separador elegante entre secciones */
+section {
+  position: relative;
+}
+
+section::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: rgba(0,0,0,0.12);
+  margin: 50px auto 0 auto;
+}
