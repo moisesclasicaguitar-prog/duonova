@@ -81,7 +81,20 @@
     height: 320px;
   }
 }
-    form {
+ @media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 12px;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 14px;
+  }
+}  
+  form {
       display: grid;
       gap: 15px;
       max-width: 600px;
