@@ -98,3 +98,11 @@
   background-color: #b38b59;
   transform: translateY(-2px);
 }
+@media (max-width: 600px) {
+  .boton-pdf {
+    display: block;
+    width: 90%;
+    margin: 12px auto;
+    font-size: 18px;
+  }
+}
