@@ -77,3 +77,24 @@
     display: none !important;
   }
 }
+.pdf-botones {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.boton-pdf {
+  display: inline-block;
+  margin: 12px;
+  padding: 14px 22px;
+  background-color: #1f1f1f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.boton-pdf:hover {
+  background-color: #b38b59;
+  transform: translateY(-2px);
+}
