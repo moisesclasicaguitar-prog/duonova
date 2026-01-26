@@ -219,7 +219,14 @@ section::after {
   box-shadow: 0 12px 28px rgba(0,0,0,0.3);
 }
 @media (min-width: 769px) {
-  #inicio::after {
-    display: none;
+  nav {
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+
+  nav::before,
+  nav::after {
+    display: none !important;
+    content: none !important;
   }
 }
