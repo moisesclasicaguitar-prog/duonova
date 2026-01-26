@@ -230,3 +230,17 @@ section::after {
     content: none !important;
   }
 }
+:root{
+  --nav-h: 56px; /* ajusta si tu menú es más alto: 50/60/64... */
+}
+
+nav{
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+}
+
+.hero{
+  height: calc(100vh - var(--nav-h));
+  margin: 0;
+}
