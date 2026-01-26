@@ -244,3 +244,17 @@ nav{
   height: calc(100vh - var(--nav-h));
   margin: 0;
 }
+.hero{
+  min-height: calc(100vh - var(--nav-h));
+  height: 85vh;
+  margin: 0;
+}
+
+#inicio{
+  margin-top: 0 !important;
+  border-top: none !important;
+}
+
+body{
+  background:#fff;
+}
