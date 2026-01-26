@@ -274,3 +274,7 @@ section::after {
     font-size: 16px;
   }
 }
+/* Quita el separador SOLO en la primera sección */
+#inicio::after{
+  display: none !important;
+  content: none !important;
