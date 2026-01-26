@@ -230,4 +230,47 @@ section::after {
     content: none !important;
   }
 }
+@media (max-width: 768px) {
 
+  /* Menú: que no se descoloque ni se subraye */
+  nav{
+    position: sticky;
+    top: 0;
+    height: auto;
+    display: block;
+    padding: 10px;
+  }
+  nav a{
+    display: inline-block;
+    margin: 8px 10px;
+    text-decoration: none !important;
+  }
+
+  /* Secciones: menos aire en móvil */
+  section{
+    padding: 40px 16px;
+  }
+  section h2{
+    font-size: 24px;
+    margin-bottom: 18px;
+    text-align: left; /* evita centrados raros */
+  }
+
+  /* Quita el “separador elegante” en móvil (a veces parece raya/espacio raro) */
+  section::after{
+    display: none !important;
+    content: none !important;
+    margin: 0 !important;
+  }
+
+  /* Tarjetas: un pelín más compactas */
+  .card{
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  /* Texto: ligeramente más pequeño para que respire */
+  p{
+    font-size: 16px;
+  }
+}
