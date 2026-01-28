@@ -329,3 +329,6 @@ section::after {
   height: 100% !important;
   border: 0;
 }
+.reel__frame iframe.no-touch {
+  pointer-events: none;
+}
