@@ -379,6 +379,10 @@
     wireButtons();
   })();
 </script>
+ <div id="lightbox" class="lightbox">
+  <span class="lightbox__close" id="lightboxClose">✕</span>
+  <img class="lightbox__img" id="lightboxImg" src="">
+</div>
  <script>
   if (window.innerWidth > 768) {
     const cover = document.getElementById("coverImage");
@@ -406,9 +410,6 @@
     }
   }
 </script>
- <div id="lightbox" class="lightbox">
-  <span class="lightbox__close" id="lightboxClose">✕</span>
-  <img class="lightbox__img" id="lightboxImg" src="">
-</div>
+ 
 </body>
 </html>
