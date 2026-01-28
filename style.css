@@ -352,3 +352,10 @@ section::after {
 .reel__frame{
   position: relative;
 }
+.reel__play{
+  pointer-events: auto;
+}
+
+.reel__cover{
+  cursor: zoom-in;
+}
