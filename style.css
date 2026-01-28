@@ -278,20 +278,30 @@ section::after {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
-/* Contenedor del video de Facebook */
+/* 📱 MÓVIL — que se vea tipo reel grande */
 .reel__fb{
   width: 100%;
-  max-width: 500px;   /* tamaño en ordenador */
-  aspect-ratio: 9 / 16;  /* forma vertical */
+  aspect-ratio: 9 / 16;
+  position: relative;
 }
 
-/* El iframe ocupa todo el contenedor */
+/* 💻 ORDENADOR — limitamos tamaño */
+@media (min-width: 769px){
+  .reel__fb{
+    max-width: 500px;
+  }
+}
+
 .reel__fb iframe{
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
   border-radius: 16px;
   border: none;
 }
