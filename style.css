@@ -276,19 +276,23 @@ section::after {
 }
 .reel{
   width: 100%;
-  max-width: 420px;
   margin: 0 auto;
 }
 
+/* Vídeo normal en pantallas grandes */
 .reel__video{
   width: 100%;
+  max-width: 500px;   /* tamaño cómodo en ordenador */
   height: auto;
   display: block;
   border-radius: 16px;
+  margin: 0 auto;
 }
 
+/* 📱 En móvil se comporta como reel vertical */
 @media (max-width: 768px){
   .reel{
+    max-width: 420px;
     aspect-ratio: 9 / 16;
   }
 
