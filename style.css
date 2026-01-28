@@ -359,3 +359,30 @@ section::after {
 .reel__cover{
   cursor: zoom-in;
 }
+/* LIGHTBOX FONDO OSCURO */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+/* IMAGEN GRANDE */
+.lightbox__img{
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+/* BOTÓN CERRAR */
+.lightbox__close{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
