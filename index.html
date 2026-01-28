@@ -381,5 +381,32 @@
     wireButtons();
   })();
 </script>
+ <script>
+  if (window.innerWidth > 768) {
+    const cover = document.getElementById("coverImage");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const lightboxClose = document.getElementById("lightboxClose");
+
+    if (cover && lightbox && lightboxImg && lightboxClose) {
+      cover.style.cursor = "zoom-in";
+
+      cover.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = cover.src;
+      });
+
+      lightboxClose.addEventListener("click", () => {
+        lightbox.style.display = "none";
+      });
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          lightbox.style.display = "none";
+        }
+      });
+    }
+  }
+</script>
 </body>
 </html>
