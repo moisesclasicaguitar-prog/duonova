@@ -296,8 +296,8 @@ section::after {
 
 @media (min-width: 769px){
   .reel__frame{
-    height: 640px;
-    max-height: 700px;
+    height: 900px;     /* más alto */
+    max-height: 95vh;  /* que no se salga de la pantalla */
   }
 }
 
