@@ -341,20 +341,42 @@
 </a>
 <script>
   (function () {
-    const btn = document.getElementById("playBtn");
     const frame = document.getElementById("videoFrame");
 
-    btn.addEventListener("click", function () {
-      frame.innerHTML = `
-        <iframe
-          src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1413753010207152/&show_text=0"
-          scrolling="no"
-          frameborder="0"
-          allowfullscreen="true"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-        </iframe>
-      `;
-    });
+    const coverHTML = `
+      <img src="assets/img/portadavideo.jpeg" class="reel__cover" alt="Portada video">
+      <button class="reel__play" id="playBtn" type="button" aria-label="Reproducir">▶</button>
+      <button class="reel__close" id="closeBtn" type="button" aria-label="Cerrar">✕</button>
+    `;
+
+    function wireButtons() {
+      const playBtn = document.getElementById("playBtn");
+      const closeBtn = document.getElementById("closeBtn");
+
+      playBtn.addEventListener("click", () => {
+        frame.innerHTML = `
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1413753010207152/&show_text=0"
+            scrolling="no"
+            frameborder="0"
+            allowfullscreen="true"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+          <button class="reel__close" id="closeBtn" type="button" aria-label="Cerrar">✕</button>
+        `;
+        document.getElementById("closeBtn").style.display = "block";
+        document.getElementById("closeBtn").addEventListener("click", closeVideo);
+      });
+
+      closeBtn.addEventListener("click", closeVideo);
+    }
+
+    function closeVideo() {
+      frame.innerHTML = coverHTML;
+      wireButtons();
+    }
+
+    wireButtons();
   })();
 </script>
 </body>
