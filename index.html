@@ -356,12 +356,11 @@
       playBtn.addEventListener("click", () => {
         frame.innerHTML = `
           <iframe
-            src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1413753010207152/&show_text=0"
-            scrolling="no"
-            frameborder="0"
-            allowfullscreen="true"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-          </iframe>
+  src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1413753010207152/&show_text=0"
+  scrolling="no"
+  frameborder="0"
+  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+</iframe>
           <button class="reel__close" id="closeBtn" type="button" aria-label="Cerrar">✕</button>
         `;
         document.getElementById("closeBtn").style.display = "block";
