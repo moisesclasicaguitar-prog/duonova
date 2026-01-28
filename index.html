@@ -344,10 +344,10 @@
     const frame = document.getElementById("videoFrame");
 
     const coverHTML = `
-      <img src="assets/img/portadavideo.jpeg" class="reel__cover" alt="Portada video">
-      <button class="reel__play" id="playBtn" type="button" aria-label="Reproducir">▶</button>
-      <button class="reel__close" id="closeBtn" type="button" aria-label="Cerrar">✕</button>
-    `;
+  <img src="assets/img/portadavideo.jpeg" class="reel__cover" id="coverImage" alt="Portada video">
+  <button class="reel__play" id="playBtn" type="button" aria-label="Reproducir">▶</button>
+  <button class="reel__close" id="closeBtn" type="button" aria-label="Cerrar">✕</button>
+`;
 
     function wireButtons() {
       const playBtn = document.getElementById("playBtn");
